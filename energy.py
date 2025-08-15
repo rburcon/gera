@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # Título do aplicativo
-st.title("Estimador de Geração de Energia Solar")
+st.title("Estimativas de Geração de Energia Solar")
 st.markdown("---")
 
 # Função para carregar os dados
