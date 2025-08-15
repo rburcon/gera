@@ -53,7 +53,7 @@ if df is not None:
     
     # Coletar os parâmetros técnicos da usina
     num_placas = st.sidebar.number_input("Número de Placas:", min_value=1, value=4, step=1)
-    dimensao_placa = st.sidebar.number_input("Área da Placa (m²):", min_value=0.1, value=2.5, step=0.1)
+    dimensao_placa = st.sidebar.number_input("Área líquida da Placa (m²):", min_value=0.1, value=2.5, step=0.1)
     eficiencia = st.sidebar.number_input("Eficiência do Módulo (%):", min_value=1.0, max_value=100.0, value=21.0, step=0.1)
     performance_ratio = st.sidebar.slider("Performance Ratio (PR):", min_value=0.5, max_value=1.0, value=0.75, step=0.01)
 
