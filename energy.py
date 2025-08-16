@@ -116,7 +116,7 @@ if df is not None:
     
     monthly_geration_df = pd.DataFrame({
         'Mês': ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
-        'Geração Estimada (kWh/mês)': monthly_geration.values
+        'Geração Estimada (kWh)': monthly_geration.values
     })
     
     # Define a ordem correta dos meses
@@ -125,7 +125,7 @@ if df is not None:
     # Cria o gráfico usando Altair com a ordem definida
     chart = alt.Chart(monthly_geration_df).mark_bar().encode(
         x=alt.X('Mês', sort=meses_ordenados, title='Mês'),
-        y=alt.Y('Geração Estimada (kWh)', title='Geração Estimada (kWh)')
+        y=alt.Y('Geração Estimada (kWh/mês)', title='Geração Estimada (kWh)')
     ).properties(
         title='Geração de Energia Mensal Estimada'
     )
