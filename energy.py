@@ -116,7 +116,7 @@ if df is not None:
     
     monthly_geration_df = pd.DataFrame({
         'Mês': ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
-        'Geração Estimada (kWh)': monthly_geration.values
+        'Geração Estimada (kWh/mês)': monthly_geration.values
     })
     
     # Define a ordem correta dos meses
