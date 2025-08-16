@@ -125,7 +125,7 @@ if df is not None:
     # Cria o gráfico usando Altair com a ordem definida
     chart = alt.Chart(monthly_geration_df).mark_bar().encode(
         x=alt.X('Mês', sort=meses_ordenados, title='Mês'),
-        y=alt.Y('Geração Estimada (kWh/mês)', title='Geração Estimada (kWh)')
+        y=alt.Y('Geração Estimada (kWh)', title='Geração Estimada (kWh)')
     ).properties(
         title='Geração de Energia Mensal Estimada'
     )
